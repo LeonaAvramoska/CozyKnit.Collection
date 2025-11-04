@@ -1,0 +1,143 @@
+body {
+  background-color: ivory; 
+  text-align: center;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;   
+    color: #808000;              
+    text-decoration: none;    
+    border-radius: 0;       
+    transition: color 0.3s;
+    font-family: garamond, serif;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+h1 {
+  font-family: garamond, serif; 
+  font-weight: bolder;
+  font-size: 42px;
+  color: #808000; 
+  margin-top: 80px;
+}
+h3{
+  font-family: garamond, serif; 
+  font-weight: bold;
+  font-size: 20px;
+  color: black; 
+  margin-top: 15px; 
+}
+
+.products {
+    display: flex;              /* Arrange products in a row */
+    gap: 40px;                  /* Space between products */
+    justify-content: center;    /* Center all products on page */
+    margin-top: 30px;
+    flex-wrap: wrap;            /* Wrap to next line if screen is small */
+}
+
+.product {
+    text-align: center;         /* Centers image and text */
+    max-width: 250px;           /* Makes all product boxes same width */
+}
+
+.product img {
+    width: 100%;                /* Image fills the product box */
+    height: auto;
+    display: block;
+    border-radius: 10px;        /* Optional: rounded corners */
+}
+
+.product p{
+    color:black !important;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.4;           /* Keeps text nicely spaced */
+}  
+
+p {
+  color: black;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px auto;
+  width: 60%;
+}
+.qa-container {
+    display: flex;
+    align-items: flex-start; /* Aligns top of question and answer */
+    gap: 20px; /* Space between question and answer */
+}
+
+.question {
+    flex: 0.5; /* Left side takes 1 part */
+    color: #808000;
+    font-weight: bold;
+}
+
+.answer {
+    flex: 2; /* Right side takes 2 parts */
+    color: black;
+    max-width: 400px; /* Limit the width for short answer */
+}
+.qa-container.reverse {
+    flex-direction: row-reverse;
+}
+.path-image {
+ position: absolute;
+  top: 980px;      /* adjust to start below the question */
+  left: 510px;     /* adjust horizontal position */
+  width: 250px;   /* adjust arrow length */
+  transform: rotate(20deg);  /* change the angle as needed */
+  transform-origin: top left; /* rotates around the start point */
+}
+.path-image-second {
+  position: absolute;
+  top: 1270px;       /* adjust to start below the second question */
+  left: 270px;      /* starting point near the answer */
+  width: 260px;     /* length of the arrow */
+  transform: rotate(1deg) scaleX(-1); /* mirror horizontally */
+  transform-origin: top right;         /* rotate around the new start point */
+}
+.thank-you {
+  position: relative;
+  color: black;                 /* text color */
+  text-align: center;           /* center text horizontally */
+  font-size: 24px;              /* adjust as needed */
+  font-family: Garamond, serif; /* optional font */
+}
+
+.thank-you::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;                  /* full width of page */
+  height: 100%;                 /* same height as text */
+  background-color: #808000;    /* the greenish bar */
+  z-index: -1;                  /* behind the text */
+}
+.arrow-left {
+  position: absolute;
+  left: 10px;       /* distance from left edge */
+  top: 50%;         
+  transform: translateY(-50%);
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+/* right arrow */
+.arrow-right {
+  position: absolute;
+  right: 10px;      /* distance from right edge */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
